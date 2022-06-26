@@ -113,7 +113,7 @@ footer {
   padding: 7px 12px;
   background-color: black;
   border-radius: 3px;
-  margin: 7px 10px;
+  margin: 7px 5px;
 }
 #homesearchhome {
   border: 0.2px solid #eee;
@@ -123,6 +123,15 @@ footer {
   border-radius: 3px;
   margin-top: 7px;
 }
+#homesearchhome:hover{
+opacity: .7;
+}
+#homeloginhome:hover{
+  opacity: .7;
+  }
+  #startcodinghome:hover{
+    opacity: .7;
+    }
 a {
   text-decoration: none;
   color: #eee;
@@ -250,6 +259,10 @@ a {
   margin: 5px;
   padding-top: 10px;
 }
+#trends,#featured,#latest{
+  margin-right: 8px;
+  color: rgb(175, 166, 166);
+}
 #headingicons {
   width: 54%;
 }
@@ -271,14 +284,14 @@ a {
   border: 0.5px solid rgb(56, 162, 227);
   background-color: rgb(56, 162, 227);
   padding: 9px 15px;
-  margin: 5px 16px;
+  margin: 5px 10px;
   border-radius: 3px;
 }
 #homelogin {
   border: 0.5px solid #eee;
   padding: 9px 15px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 6px;
+  margin-right: 10px;
   margin-top: 5px;
   background-color: black;
   border-radius: 3px;
@@ -286,11 +299,20 @@ a {
 #homesearch {
   border: 0.5px solid #eee;
   padding: 9px 8px;
-  margin-left: 4 16px;
+  margin-left: 6px;
   margin-right: 16px;
   margin-top: 5px;
   background-color: black;
   border-radius: 3px;
+}
+#homesearch:hover{
+  opacity: .7;
+}
+#homelogin:hover{
+  opacity: .7;
+}
+#startcoding:hover{
+  opacity: .7;
 }
 #topsearch {
   display: flex;

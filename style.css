@@ -77,6 +77,21 @@ footer {
   margin: 5px;
   padding-top: 4px;
 }
+#flamehome,
+#starhome,
+#watchhome{
+  margin-top: 7px;
+  color: rgb(177, 171, 171);
+}
+#flamehome:hover{
+  color:#eee;
+}
+#starhome:hover{
+  color:#eee;
+}
+#watchhome:hover{
+  color:#eee;
+}
 #skriperlogohome {
   margin-top: 5px;
 }
@@ -89,24 +104,31 @@ footer {
 #startcodinghome {
   border: 0.5px solid rgb(56, 162, 227);
   background-color: rgb(56, 162, 227);
-  padding: 8px 10px;
-  margin: 7px 10px;
+  padding: 8px 6px;
+  margin: 7px 15px;
   border-radius: 3px;
 }
 #homeloginhome {
-  border: 0.5px solid #eee;
-  padding: 7px 15px;
+  border: 0.2px solid #eee;
+  padding: 7px 12px;
+  background-color: black;
+  border-radius: 3px;
+  margin: 7px 10px;
 }
 #homesearchhome {
-  border: 0.5px solid #eee;
-  padding: 7px 8px;
+  border: 0.2px solid #eee;
+  padding: 7px 15px;
+  padding-top: 6px;
+  background-color: black;
+  border-radius: 3px;
+  margin-top: 7px;
 }
 a {
   text-decoration: none;
   color: #eee;
 }
 #body {
-  margin-left: 15%;
+  margin-left: 19%;
   margin-right: 20%;
 }
 #topimg {
@@ -231,7 +253,20 @@ a {
 #headingicons {
   width: 54%;
 }
-
+#flame,
+#star,
+#watch{
+  color: rgb(175, 166, 166);
+}
+#flame:hover{
+  color:#eee;
+}
+#star:hover{
+  color:#eee;
+}
+#watch:hover{
+  color:#eee;
+}
 #startcoding {
   border: 0.5px solid rgb(56, 162, 227);
   background-color: rgb(56, 162, 227);
@@ -245,6 +280,8 @@ a {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 5px;
+  background-color: black;
+  border-radius: 3px;
 }
 #homesearch {
   border: 0.5px solid #eee;
@@ -252,6 +289,8 @@ a {
   margin-left: 4 16px;
   margin-right: 16px;
   margin-top: 5px;
+  background-color: black;
+  border-radius: 3px;
 }
 #topsearch {
   display: flex;

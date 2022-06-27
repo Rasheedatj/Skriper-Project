@@ -17,6 +17,7 @@ footer {
   align-items: start;
   padding: 50px;
   width: 100%;
+  margin-top: 40px;
 }
 .box1 {
   margin-top: 1.3rem;
@@ -56,14 +57,18 @@ footer {
 }
 
 /* HOME PAGE STYLE */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background-color: #131313;
+}
+
 #homemain {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   width: 100%;
   color: #eee;
-  /* position: -webkit-sticky;
-    position: sticky;
-    top: 0; */
 }
 
 #flamehome,
@@ -79,21 +84,22 @@ footer {
 }
 #flamehome,
 #starhome,
-#watchhome{
+#watchhome {
   margin-top: 7px;
   color: rgb(177, 171, 171);
 }
-#flamehome:hover{
-  color:#eee;
+#flamehome:hover {
+  color: #eee;
 }
-#starhome:hover{
-  color:#eee;
+#starhome:hover {
+  color: #eee;
 }
-#watchhome:hover{
-  color:#eee;
+#watchhome:hover {
+  color: #eee;
 }
 #skriperlogohome {
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 #headingiconshome {
@@ -123,15 +129,15 @@ footer {
   border-radius: 3px;
   margin-top: 7px;
 }
-#homesearchhome:hover{
-opacity: .7;
+#homesearchhome:hover {
+  opacity: 0.7;
 }
-#homeloginhome:hover{
-  opacity: .7;
-  }
-  #startcodinghome:hover{
-    opacity: .7;
-    }
+#homeloginhome:hover {
+  opacity: 0.7;
+}
+#startcodinghome:hover {
+  opacity: 0.7;
+}
 a {
   text-decoration: none;
   color: #eee;
@@ -259,7 +265,9 @@ a {
   margin: 5px;
   padding-top: 10px;
 }
-#trends,#featured,#latest{
+#trends,
+#featured,
+#latest {
   margin-right: 8px;
   color: rgb(175, 166, 166);
 }
@@ -268,17 +276,17 @@ a {
 }
 #flame,
 #star,
-#watch{
+#watch {
   color: rgb(175, 166, 166);
 }
-#flame:hover{
-  color:#eee;
+#flame:hover {
+  color: #eee;
 }
-#star:hover{
-  color:#eee;
+#star:hover {
+  color: #eee;
 }
-#watch:hover{
-  color:#eee;
+#watch:hover {
+  color: #eee;
 }
 #startcoding {
   border: 0.5px solid rgb(56, 162, 227);
@@ -305,14 +313,14 @@ a {
   background-color: black;
   border-radius: 3px;
 }
-#homesearch:hover{
-  opacity: .7;
+#homesearch:hover {
+  opacity: 0.7;
 }
-#homelogin:hover{
-  opacity: .7;
+#homelogin:hover {
+  opacity: 0.7;
 }
-#startcoding:hover{
-  opacity: .7;
+#startcoding:hover {
+  opacity: 0.7;
 }
 #topsearch {
   display: flex;
@@ -354,6 +362,7 @@ input:focus {
   width: 46%;
   display: flex;
   margin-top: 8px;
+  margin-left: 10px;
 }
 #help {
   margin-left: 20px;

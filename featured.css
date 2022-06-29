@@ -69,7 +69,7 @@ header{
 }
 .navBox{
     background-color: #000000;
-    border: 1px solid #eee;
+    border: 1px solid gray;
     border-radius: 3px;  
 }
 .one{

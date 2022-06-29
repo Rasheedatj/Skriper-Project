@@ -55,6 +55,76 @@ footer {
 .box3 {
   font-size: 16px;
 }
+/* STYLE FOR NAV BAR */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background-color: #131313;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.navleft{
+  display: flex;  
+}
+.navleft img{
+  margin: 0px 15px;
+  width: 40px;
+  height: 40px;
+}
+.navleft ul{
+  font-size: 14px;
+}
+.text-bottom{
+  font-size: 12px;
+}
+.help-top,.help-bottom{
+  list-style-type: none;
+  color: #eee;
+}
+.navright ul{
+  display: flex;
+}
+.navright ul li button{
+  padding: 5px 10px;
+  background-color: #131313;
+  margin-right: 10px; 
+}
+.navright button a{
+  text-decoration: none;
+  color: #eee;
+  font-size: 14px;
+}
+.navright img{
+  padding-right: 10px;
+}
+.navText{
+  border: none;
+  opacity: .5; 
+}
+.navText:hover{
+  opacity: 1.0; 
+}
+.navBox{
+  background-color: #000000;
+  border: 1px solid #33a9dc;
+  border-radius: 3px;  
+}
+.one{
+  background-image: linear-gradient(160deg, #33a9dc, #4c83ff);
+}
+.navBox :hover{
+  opacity: .6;
+}
+.navright .navBox{
+  margin-right: 20px;
+}
+
+
 
 /* HOME PAGE STYLE */
 header {
@@ -64,84 +134,7 @@ header {
   background-color: #131313;
 }
 
-#homemain {
-  /* overflow: hidden; */
-  display: flex;
-  width: 100%;
-  color: #eee;
-}
 
-#flamehome,
-#starhome,
-#watchhome,
-#startcodinghome,
-#homeloginhome,
-#homesearchhome {
-  float: left;
-  padding: 0 16px;
-  margin: 5px;
-  padding-top: 4px;
-}
-#flamehome,
-#starhome,
-#watchhome {
-  margin-top: 7px;
-  color: rgb(177, 171, 171);
-}
-#flamehome:hover {
-  color: #eee;
-}
-#starhome:hover {
-  color: #eee;
-}
-#watchhome:hover {
-  color: #eee;
-}
-#skriperlogohome {
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-#headingiconshome {
-  width: 54%;
-  margin-left: 40%;
-}
-
-#startcodinghome {
-  border: 0.5px solid rgb(56, 162, 227);
-  background-color: rgb(56, 162, 227);
-  padding: 8px 6px;
-  margin: 7px 15px;
-  border-radius: 3px;
-}
-#homeloginhome {
-  border: 0.2px solid #eee;
-  padding: 7px 12px;
-  background-color: black;
-  border-radius: 3px;
-  margin: 7px 5px;
-}
-#homesearchhome {
-  border: 0.2px solid #eee;
-  padding: 7px 15px;
-  padding-top: 6px;
-  background-color: black;
-  border-radius: 3px;
-  margin-top: 7px;
-}
-#homesearchhome:hover {
-  opacity: 0.7;
-}
-#homeloginhome:hover {
-  opacity: 0.7;
-}
-#startcodinghome:hover {
-  opacity: 0.7;
-}
-a {
-  text-decoration: none;
-  color: #eee;
-}
 #body {
   margin-left: 19%;
   margin-right: 20%;
@@ -253,74 +246,6 @@ a {
 #faqparagraph {
   margin-left: 35px;
   padding-right: 15px;
-}
-#flame,
-#star,
-#watch,
-#startcoding,
-#homelogin,
-#homesearch {
-  float: left;
-  padding: 0 16px;
-  margin: 5px;
-  padding-top: 10px;
-}
-#trends,
-#featured,
-#latest {
-  margin-right: 8px;
-  color: rgb(175, 166, 166);
-}
-#headingicons {
-  width: 54%;
-}
-#flame,
-#star,
-#watch {
-  color: rgb(175, 166, 166);
-}
-#flame:hover {
-  color: #eee;
-}
-#star:hover {
-  color: #eee;
-}
-#watch:hover {
-  color: #eee;
-}
-#startcoding {
-  border: 0.5px solid rgb(56, 162, 227);
-  background-color: rgb(56, 162, 227);
-  padding: 9px 15px;
-  margin: 5px 10px;
-  border-radius: 3px;
-}
-#homelogin {
-  border: 0.5px solid #eee;
-  padding: 9px 15px;
-  margin-left: 6px;
-  margin-right: 10px;
-  margin-top: 5px;
-  background-color: black;
-  border-radius: 3px;
-}
-#homesearch {
-  border: 0.5px solid #eee;
-  padding: 9px 8px;
-  margin-left: 6px;
-  margin-right: 16px;
-  margin-top: 5px;
-  background-color: black;
-  border-radius: 3px;
-}
-#homesearch:hover {
-  opacity: 0.7;
-}
-#homelogin:hover {
-  opacity: 0.7;
-}
-#startcoding:hover {
-  opacity: 0.7;
 }
 #topsearch {
   display: flex;

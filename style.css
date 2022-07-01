@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(19, 19, 19);
+  color: #eee;
 }
 /* style for footer section */
 footer {
@@ -85,7 +86,7 @@ header{
 .navright ul{
   display: flex;
 }
-.navright ul li{
+.navright ul, .navleft ul{
   list-style-type: none;
 }
 .navright ul li button{
@@ -316,8 +317,35 @@ input:focus {
 #faqparagraph div {
   padding: 12px;
   color: #eee;
+  border-radius: 2px;
 }
-
+#faqparagraph div input{
+  display: none;
+}
+#accordion_content{
+  display: none;
+}
+#faqparagraph div input:checked ~ #accordion_content{
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#faqparagraph div label{
+  display: block;
+  cursor: pointer;
+  padding: 0;
+}
+#faqparagraph div input:checked ~ label{
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#faqparagraph iframe{
+  border: 10px solid #222;
+  border-radius: 2px;
+  display: block;
+  margin: 20px auto;
+}
 #faq1 {
   grid-area: a;
   background-color: #414141;

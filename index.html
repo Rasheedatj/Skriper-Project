@@ -14,129 +14,186 @@
   <body>
     <!-- html code for the home page -->
     <header>
-    
       <nav class="navbar">
         <div class="navleft">
-            <a href="index.html"><img src="IMAGES\just-logo.svg" alt="skriper-logo"></a>
-            <ul>
-                <li class="text-top" style="color: rgb(19, 19, 19);"><strong>HELP</strong></li>
-                <li class="text-bottom" style="color: rgb(19, 19, 19);">Help documentation for using our platform</li>
-            </ul>
+          <a href="index.html"
+            ><img src="IMAGES\just-logo.svg" alt="skriper-logo"
+          /></a>
+
+          <ul>
+            <li class="text-top" style="color: rgb(19, 19, 19)">HELP</li>
+            <li class="text-bottom" style="color: rgb(19, 19, 19)">
+              Help documentation for using our platform
+            </li>
+          </ul>
         </div>
+
         <div class="navright">
-            <ul>
-                <li><button class="navText"><a href="trends.html" ><img src="IMAGES\flame.svg" alt="">Trends</a></button></li>
-                <li><button class="navText"><a href="featured.html" ><img src="IMAGES\star-filled.svg" alt="">Featured</a></button></li>
-                <li><button class="navText"><a href="lastest.html"><img src="IMAGES\watch.svg" alt="">Latest</a></button></li>
-                <li><button class="navBox one"><a href="#" ><img src="IMAGES\just-menu-item-logo.svg" alt=""><strong>Start Coding</strong></a></button></li>
-                <li><button class="navBox"><a href="#" ><img src="IMAGES\login.svg" alt="">Login</a></button></li>
-                <li><button class="navBox"><a href="#" ><img src="IMAGES\zoom.svg" alt=""></a></button></li>
-            </ul>  
+          <a href="trends.html">
+            <img src="IMAGES\flame.svg" alt="" />
+            <p>Trends</p>
+          </a>
+
+          <a href="featured.html">
+            <img src="IMAGES\star-filled.svg" alt="" />
+            <p>Featured</p>
+          </a>
+
+          <a href="lastest.html">
+            <img src="IMAGES\watch.svg" alt="" />
+            <p>Latest</p>
+          </a>
+
+          <a href="#" class="one">
+            <img src="IMAGES\just-menu-item-logo.svg" alt="" />
+            <p><strong>Start Coding</strong></p>
+          </a>
+
+          <a href="#">
+            <img src="IMAGES\login.svg" alt="" />
+            <p>Login</p>
+          </a>
+
+          <a href="#">
+            <img src="IMAGES\zoom.svg" alt="" />
+            <p></p>
+          </a>
         </div>
-    </nav>
+      </nav>
     </header>
+
     <main id="body">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div>
+          <p id="topimg">
+            <img src="IMAGES/logo-text.svg" alt="skrippertext" id="topimg" />
+          </p>
+        </div>
+        <h1 id="gradientheading">The place where your ideas come true</h1>
+        <p id="subgradientheading">
+          THE PLAYGROUND FOR DEVELOPERS WITH COOL STUFF
+        </p>
+      </section>
+
+      <!-- Playground image -->
       <div>
-        <p id="topimg">
-          <img src="IMAGES/logo-text.svg" alt="skrippertext" id="topimg" />
+        <img
+          src="IMAGES/code.png"
+          alt="code playground"
+          id="codeplayground"
+          width="800px"
+        />
+        <p id="article">
+          Explore and experiment with HTML, Javascript and CSS visualise your
+          ideas and get instant feedback
         </p>
       </div>
-      <h1 id="gradientheading">The place where your ideas come true</h1>
-      <h2 id="subgradientheading">
-        THE PLAYGROUND FOR DEVELOPERS WITH COOL STUFF
-      </h2>
+      <div class="containers">
+        <!-- CONTAINER 1 -->
+        <section id="container1">
+          <!-- text -->
+          <div>
+            <h1 id="htmlheading">HTML</h1>
 
-      <img
-        src="IMAGES/code.png"
-        alt="code playground"
-        id="codeplayground"
-        width="800px"
-      />
-      <p id="article">
-        Explore and experiment with HTML, Javascript and CSS visualise your
-        ideas and get instant feedback
-      </p>
-      <section id="container1">
-        <div id="htmltext">
-          <h1 id="htmlheading">HTML</h1>
-          <p id="htmlparahragph">
-            Write your html code fast and preview it in real time
-          </p>
-          <h1 id="cssheading">CSS</h1>
-          <p id="cssparagraph">
-            POwerful css editor with autocomplete module and many tools as
-            gradient generator, color utils and more
-          </p>
-          <h1 id="jshead">JAVAScript</h1>
-          <p id="jsparagraph">
-            Write cool js code quickly and get instant feedback in real time
-            with our sandbox, you can run your code in the sanbox and get
-            result.
-          </p>
-        </div>
-        <div id="htmlimg">
-          <img
-            src="IMAGES/html-css-js.png"
-            alt="html css and js image"
-            width="350px"
-          />
-        </div>
-      </section>
-      <section id="container2">
-        <div id="codetoimage">
-          <img src="IMAGES/share-code.png" alt="share code img" width="300px" />
-        </div>
-        <div id="codetoimgtext">
-          <h1>CODE TO IMAGE</h1>
-          <p>
-            Create and share beautiful images of your source code. Only select
-            your code and share it. You can customize the image with your own
-            text, background color, font color, font size, font family and
-            more...
-          </p>
-        </div>
-      </section>
-      <section id="container3">
-        <div id="snippetimg">
-          <img src="IMAGES/snippets(1).png" alt="snippet image" width="300px" />
-        </div>
-        <div id="snippettext">
-          <h1>SNIPPETS</h1>
-          <p>
-            Create your own snippets and share them with the community. You can
-            use them in your code in autocomplete module.
-          </p>
-        </div>
-      </section>
-      <section id="container4">
-        <div id="videoimg">
-          <img
-            src="IMAGES/tutorials(1).png"
-            alt="tutorials image"
-            width="300px"
-          />
-        </div>
-        <div id="tutorialtext">
-          <h1>VIDEO ATTACHED TO YOUR CODE</h1>
-          <p>
-            Add your video tutorial in your code and help to yours users to get
-            a better experience.
-          </p>
-        </div>
-      </section>
-      <section id="container5">
-        <div id="markdownimg">
-          <img src="IMAGES/markdown(1).png" alt="markdownimg" width="300px" />
-        </div>
-        <div id="markdowntext">
-          <h1>START WRITING</h1>
-          <p>
-            Document your code or write something for your users. Publishing
-            content has never been easier.
-          </p>
-        </div>
-      </section>
+            <p id="htmlparahragph">
+              Write your html code fast and preview it in real time
+            </p>
+
+            <h1 id="cssheading">CSS</h1>
+
+            <p id="cssparagraph">
+              POwerful css editor with autocomplete module and many tools as
+              gradient generator, color utils and more
+            </p>
+
+            <h1 id="jshead">JAVAScript</h1>
+
+            <p id="jsparagraph">
+              Write cool js code quickly and get instant feedback in real time
+              with our sandbox, you can run your code in the sanbox and get
+              result.
+            </p>
+          </div>
+
+          <!-- image -->
+          <div id="htmlimg">
+            <img
+              src="IMAGES/html-css-js.png"
+              alt="html css and js image"
+              width="350px"
+            />
+          </div>
+        </section>
+        <!-- CONTAINER 2 -->
+        <section id="container2">
+          <div id="codetoimage">
+            <img
+              src="IMAGES/share-code.png"
+              alt="share code img"
+              width="300px"
+            />
+          </div>
+          <div id="codetoimgtext">
+            <h1>CODE TO IMAGE</h1>
+            <p>
+              Create and share beautiful images of your source code. Only select
+              your code and share it. You can customize the image with your own
+              text, background color, font color, font size, font family and
+              more...
+            </p>
+          </div>
+        </section>
+        <!-- CONTAINER 3 -->
+        <section id="container3">
+          <div id="snippetimg">
+            <img
+              src="IMAGES/snippets(1).png"
+              alt="snippet image"
+              width="300px"
+            />
+          </div>
+          <div id="snippettext">
+            <h1>SNIPPETS</h1>
+            <p>
+              Create your own snippets and share them with the community. You
+              can use them in your code in autocomplete module.
+            </p>
+          </div>
+        </section>
+        <!-- CONTAINER 4 -->
+        <section id="container4">
+          <div id="videoimg">
+            <img
+              src="IMAGES/tutorials(1).png"
+              alt="tutorials image"
+              width="300px"
+            />
+          </div>
+          <div id="tutorialtext">
+            <h1>VIDEO ATTACHED TO YOUR CODE</h1>
+            <p>
+              Add your video tutorial in your code and help to yours users to
+              get a better experience.
+            </p>
+          </div>
+        </section>
+        <!-- CONTAINER 5 -->
+        <section id="container5">
+          <div id="markdownimg">
+            <img src="IMAGES/markdown(1).png" alt="markdownimg" width="300px" />
+          </div>
+          <div id="markdowntext">
+            <h1>START WRITING</h1>
+            <p>
+              Document your code or write something for your users. Publishing
+              content has never been easier.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
+
     <!-- html code for footer -->
     <footer>
       <div class="box1">
@@ -160,7 +217,14 @@
       </div>
       <div class="box3">
         <p>Copyright Skriper.dev © 2022</p>
-        <img src="IMAGES/contact-skriper-text.svg" alt="" />
+        <div>
+          <a href="#">
+            <img
+              src="IMAGES/contact-skriper-text.svg"
+              style="width: 80%"
+              alt=""
+          /></a>
+        </div>
       </div>
     </footer>
   </body>

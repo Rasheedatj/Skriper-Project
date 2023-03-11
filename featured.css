@@ -10,9 +10,7 @@ body {
   margin: 0;
   padding: 0;
 }
-ul {
-  list-style: none;
-}
+
 .main-body {
   width: 90%;
   margin: auto;
@@ -34,22 +32,24 @@ header {
 }
 .navleft {
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.left {
-  display: none;
-}
-
-.left ul {
-  font-size: 14px;
-  color: white;
-}
 .text-bottom {
   font-size: 12px;
 }
 .navright {
   display: flex;
   gap: 1rem;
+}
+
+.left-two {
+  display: none;
+}
+
+li {
+  list-style: none;
 }
 
 .navright a {
@@ -274,9 +274,6 @@ footer {
 
 @media screen and (max-width: 760px) {
   /* style for navigation bar */
-  header .left {
-    display: none;
-  }
 
   .navright a {
     display: none;
@@ -298,10 +295,19 @@ footer {
     padding: 1rem 1.5rem;
   }
 
+  .left {
+    display: none;
+  }
+
+  .left-two {
+    display: block;
+  }
+
   /* style for the boxes */
   .container {
     grid-template-columns: 1fr;
     gap: 4rem;
+    margin-block: 2rem;
   }
 
   .container > div {
@@ -367,6 +373,7 @@ footer {
 
   .containers {
     width: 100%;
+    margin-block: 3rem;
   }
 
   .container {
@@ -382,6 +389,10 @@ footer {
     font-size: 14px;
   }
 
+  .left {
+    display: none;
+  }
+
   .navright {
     gap: 10px;
   }
@@ -395,5 +406,6 @@ footer {
   .container {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    margin-block: 2rem;
   }
 }

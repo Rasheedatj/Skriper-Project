@@ -73,10 +73,15 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   margin: 10px 0px;
 }
 .navleft {
   display: flex;
+}
+
+.left {
+  display: none;
 }
 
 .left ul {
@@ -97,7 +102,7 @@ header {
   margin-right: 10px;
   border: 1px solid gray;
   border-radius: 3px;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -165,7 +170,7 @@ header {
   text-align: center;
   color: white;
   padding-bottom: 10rem;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 400;
 }
 #codeplayground {
@@ -204,10 +209,29 @@ header {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 420px) {
-  header .navright,
-  .left {
+@media screen and (max-width: 760px) {
+  header .left {
     display: none;
+  }
+
+  .navright a {
+    display: none;
+  }
+
+  .navright .one,
+  .navright .two,
+  .navright .three {
+    display: flex;
+  }
+
+  .navright .one p,
+  .navright .two p,
+  .navright .three p {
+    display: none;
+  }
+
+  header {
+    padding: 1rem 1.5rem;
   }
 
   .hero {
@@ -251,9 +275,58 @@ header {
   }
 }
 
+@media screen and (min-width: 765px) and (max-width: 800px) {
+  .navright a {
+    display: none;
+  }
+
+  .navright .one,
+  .navright .two,
+  .navright .three {
+    display: flex;
+  }
+
+  #body {
+    width: 90%;
+  }
+
+  .navright .one p,
+  .navright .two p,
+  .navright .three p {
+    display: block;
+  }
+
+  .containers {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .navright a {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .navright {
+    gap: 10px;
+  }
+
+  .navright .no-border {
+    border: none;
+    padding: 0;
+  }
+
+  #body {
+    width: 85%;
+  }
+
+  .containers {
+    width: 100%;
+  }
+}
+
 /* second media query */
-@media screen and (min-width: 540px) and (max-width: 639px) {
-  * {
+/* @media screen and (min-width: 540px) and (max-width: 639px) { */
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -264,9 +337,9 @@ header {
     background-color: rgb(19, 19, 19);
     color: #eee;
     width: 100%;
-  }
-  /* style for footer section */
-  footer {
+  } */
+/* style for footer section */
+/* footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -328,10 +401,10 @@ header {
   .box3 p,
   .box3 img {
     padding-left: 2.4rem;
-  }
+  } */
 
-  /* style for navigation bar */
-  header {
+/* style for navigation bar */
+/* header {
     position: sticky;
     top: 0;
     z-index: 15;
@@ -419,10 +492,10 @@ header {
   #tutorialtext {
     width: 120%;
     color: white;
-  }
+  } */
 
-  /* style for footer section- mobile 600px */
-  @media only screen and (max-width: 600px) {
+/* style for footer section- mobile 600px */
+/* @media only screen and (max-width: 600px) {
     footer {
       display: flex;
       flex-direction: column;
@@ -484,10 +557,10 @@ header {
     .box3 p,
     .box3 img {
       padding-left: 2.4rem;
-    }
+    } */
 
-    /* style for navigation bar */
-    header {
+/* style for navigation bar */
+/* header {
       position: sticky;
       top: 0;
       z-index: 15;
@@ -556,11 +629,11 @@ header {
     }
     .navright .navBox {
       margin-right: 20px;
-    }
+    } */
 
-    /* HOME PAGE STYLE */
+/* HOME PAGE STYLE */
 
-    #body {
+/* #body {
       margin-left: 2rem;
       margin-right: 0rem;
       width: 90%;
@@ -729,10 +802,10 @@ header {
     #markdowntext {
       width: 90%;
       color: white;
-    }
+    } */
 
-    /* FAQ PAGE STYLE  */
-    #faq {
+/* FAQ PAGE STYLE  */
+/* #faq {
       margin-left: 20px;
       margin-right: 19px;
       display: none;
@@ -908,4 +981,4 @@ header {
       background-color: #414141;
     }
   }
-}
+} */

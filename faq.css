@@ -4,328 +4,147 @@
   margin: 0;
   box-sizing: border-box;
 }
-#faq {
-  margin-left: 20px;
-  margin-right: 19px;
-  display: none;
-}
-#faqparagraph {
-  margin-left: 1rem;
-  margin-top: 2rem;
-  padding-right: 0rem;
-}
-#topsearch {
-  display: flex;
-  width: 98%;
-  border: 9px solid rgba(67, 67, 67, 0.4);
-  margin-bottom: 20px;
-}
-#searchtext {
-  width: 10%;
-  color: #eee;
-  background-color: #434343;
-  padding-top: 10px;
 
-  padding-left: 10px;
-}
-#searchspace {
-  width: 100%;
-  background-color: #393939;
-  padding: 10px;
-}
-input {
-  background-color: #393939;
-  border: none;
-  width: 100%;
-}
-input:focus {
-  outline: 0;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(19, 19, 19);
   color: #eee;
-}
-
-#searchicon {
-  width: 3%;
-}
-#iconfaq {
-  padding: 10px;
-  background-color: #434343;
-}
-#skriperlogo {
-  width: 46%;
-  display: flex;
-  margin-top: 8px;
-  margin-left: 10px;
-}
-#help {
-  margin-left: 20px;
-}
-#faqparagraph {
-  display: grid;
-  display: flex;
-  flex-direction: column;
-  grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "d"
-    "e"
-    "f"
-    "g"
-    "h"
-    "i"
-    "j"
-    "k"
-    "l"
-    "m"
-    "n"
-    "o"
-    "p";
-  gap: 10px;
-  width: 94%;
-}
-#faqparagraph div {
-  padding: 12px;
-  color: #eee;
-  border-radius: 2px;
-}
-#faqparagraph div input {
-  display: none;
-}
-#accordion_content {
-  display: none;
-}
-#faqparagraph div input:checked ~ #accordion_content {
-  display: block;
-  padding: 0 10px;
-  font-size: 14px;
-}
-#faqparagraph div label {
-  display: block;
-  cursor: pointer;
+  margin: 0;
   padding: 0;
 }
-#faqparagraph div input:checked ~ label {
-  padding: 0 10px;
-  font-size: 20px;
-  font-weight: 600;
+
+.main-body {
+  width: 90%;
+  margin: auto;
+  margin-block: 5rem;
 }
-#faqparagraph iframe {
-  border: 10px solid #222;
-  border-radius: 2px;
+
+/* -----HEADER---------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background-color: #131313;
+  padding: 0.5rem 3rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0px;
+}
+.navleft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-bottom {
+  font-size: 12px;
+}
+.navright {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-two {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navright a {
+  padding: 5px 10px;
+  background-color: #131313;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navright a img,
+.navright a p {
+  color: white;
+  opacity: 0.6;
+  font-size: 17px;
+  transition: opacity 200ms ease;
+}
+
+.navright a:hover p,
+.navright a:hover img {
+  opacity: 1;
+}
+
+.one {
+  transition: background-image 200ms ease;
+  background-image: linear-gradient(160deg, #33a9dc, #4c83ff);
+}
+.one:hover {
+  background-image: none;
+}
+.one,
+.two,
+.three {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.navright .navBox {
+  margin-right: 20px;
+}
+
+/* -----FOOTER------- */
+footer {
+  background-color: #252525;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+}
+
+.logo {
   display: block;
-  margin: 20px auto;
 }
-#faq1 {
-  grid-area: a;
-  background-color: #414141;
-}
-#faq2 {
-  grid-area: b;
-  background-color: #414141;
-}
-#faq3 {
-  grid-area: c;
-  background-color: #414141;
-}
-#faq4 {
-  grid-area: d;
-  background-color: #414141;
-}
-#faq5 {
-  grid-area: e;
-  background-color: #414141;
-}
-#faq6 {
-  grid-area: f;
-  background-color: #414141;
-}
-#faq7 {
-  grid-area: g;
-  background-color: #414141;
-}
-#faq8 {
-  grid-area: h;
-  background-color: #414141;
-}
-#faq9 {
-  grid-area: i;
-  background-color: #414141;
-}
-#faq10 {
-  grid-area: j;
-  background-color: #414141;
-}
-#faq11 {
-  grid-area: k;
-  background-color: #414141;
-}
-#faq12 {
-  grid-area: l;
-  background-color: #414141;
-}
-#faq13 {
-  grid-area: m;
-  background-color: #414141;
-}
-#faq14 {
-  grid-area: n;
-  background-color: #414141;
-}
-#faq15 {
-  grid-area: o;
-  background-color: #414141;
-}
-#faq16 {
-  grid-area: p;
-  background-color: #414141;
+.icons {
+  display: flex;
+  gap: 1rem;
 }
 
-@media screen and (min-width: 540px) and (max-width: 639px) {
-  /* FAQ PAGE STYLE  */
-  #faq {
-    margin-left: 20px;
-    margin-right: 19px;
-  }
-  #faqparagraph {
-    margin-left: 35px;
-    padding-right: 15px;
-  }
-  #topsearch {
-    display: flex;
-    width: 98%;
-    border: 9px solid rgba(67, 67, 67, 0.4);
-    margin-bottom: 20px;
-  }
-  #searchtext {
-    width: 10%;
-    color: #eee;
-    background-color: #434343;
-    padding-top: 10px;
+.icons img {
+  width: 50%;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+.box2 h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.6;
+}
+.box2 ul {
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+}
+.box2 ul a {
+  text-decoration: none;
+  color: #eee;
+  margin-bottom: 25px;
+  padding: 0;
+  line-height: 2.5;
+}
+.box3 {
+  font-size: 16px;
+}
 
-    padding-left: 10px;
-  }
-  #searchspace {
-    width: 100%;
-    background-color: #393939;
-    padding: 10px;
-  }
-  input {
-    background-color: #393939;
-    border: none;
-    width: 100%;
-  }
-  input:focus {
-    outline: 0;
-    color: #eee;
-  }
-
-  #searchicon {
-    width: 3%;
-  }
-  #iconfaq {
-    padding: 10px;
-    background-color: #434343;
-  }
-  #skriperlogo {
-    width: 46%;
-    display: flex;
-    margin-top: 8px;
-    margin-left: 10px;
-  }
-  #help {
-    margin-left: 20px;
-  }
-  #faqparagraph {
-    display: grid;
-    display: flex;
-    flex-direction: column;
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d"
-      "e"
-      "f"
-      "g"
-      "h"
-      "i"
-      "j"
-      "k"
-      "l"
-      "m"
-      "n"
-      "o"
-      "p";
-    gap: 10px;
-    width: 94%;
-  }
-  #faqparagraph div {
-    padding: 12px;
-    color: #eee;
-  }
-
-  #faq1 {
-    grid-area: a;
-    background-color: #414141;
-  }
-  #faq2 {
-    grid-area: b;
-    background-color: #414141;
-  }
-  #faq3 {
-    grid-area: c;
-    background-color: #414141;
-  }
-  #faq4 {
-    grid-area: d;
-    background-color: #414141;
-  }
-  #faq5 {
-    grid-area: e;
-    background-color: #414141;
-  }
-  #faq6 {
-    grid-area: f;
-    background-color: #414141;
-  }
-  #faq7 {
-    grid-area: g;
-    background-color: #414141;
-  }
-  #faq8 {
-    grid-area: h;
-    background-color: #414141;
-  }
-  #faq9 {
-    grid-area: i;
-    background-color: #414141;
-  }
-  #faq10 {
-    grid-area: j;
-    background-color: #414141;
-  }
-  #faq11 {
-    grid-area: k;
-    background-color: #414141;
-  }
-  #faq12 {
-    grid-area: l;
-    background-color: #414141;
-  }
-  #faq13 {
-    grid-area: m;
-    background-color: #414141;
-  }
-  #faq14 {
-    grid-area: n;
-    background-color: #414141;
-  }
-  #faq15 {
-    grid-area: o;
-    background-color: #414141;
-  }
-  #faq16 {
-    grid-area: p;
-    background-color: #414141;
-  }
+.box3 div {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: end;
 }

@@ -4,6 +4,16 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background: #414141;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
 body {
   background-color: #131313;
   color: #eee;
@@ -114,6 +124,10 @@ li {
 .login p {
   padding-top: 3px;
   font-size: 14px;
+}
+
+.login h3 {
+  text-transform: capitalize;
 }
 
 .login form {
@@ -340,7 +354,10 @@ footer {
 
 @media screen and (max-width: 760px) {
   /* style for navigation bar */
-
+  .login {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .navright a {
     display: none;
   }

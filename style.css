@@ -9,6 +9,16 @@ body {
   background-color: rgb(19, 19, 19);
 }
 
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background: #414141;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
 /* style for footer section */
 footer {
   background-color: #252525;
@@ -167,6 +177,10 @@ header {
   font-size: 14px;
 }
 
+.login h3 {
+  text-transform: capitalize;
+}
+
 .login form {
   display: flex;
   flex-direction: column;
@@ -269,6 +283,10 @@ header {
 }
 
 @media screen and (max-width: 760px) {
+  .login {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   header .left {
     display: none;
   }

@@ -100,22 +100,34 @@ header {
   padding: 5px 10px;
   background-color: #131313;
   margin-right: 10px;
-  border: 1px solid gray;
-  border-radius: 3px;
-  color: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.navright a {
   text-decoration: none;
-  color: #eee;
+}
+
+.navright a img,
+.navright a p {
+  color: white;
+  opacity: 0.6;
   font-size: 17px;
+}
+
+.navright a:hover p,
+.navright a:hover img {
+  opacity: 1;
 }
 
 .one {
   transition: background-image 200ms ease;
   background-image: linear-gradient(160deg, #33a9dc, #4c83ff);
+}
+
+.one,
+.two,
+.three {
+  border: 1px solid gray;
+  border-radius: 3px;
 }
 .one:hover {
   background-image: none;

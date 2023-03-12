@@ -128,23 +128,26 @@ li {
 .container {
   margin-block: 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
   gap: 2rem;
-  place-content: center;
 }
 
 .container > div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #252525;
 }
 
 .box .imageBox {
   cursor: pointer;
   background-color: #414141;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  margin-bottom: -35px;
-  position: relative;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: -1.5rem;
+
   box-shadow: inset 2px 2px 15px #252525;
 }
 
@@ -162,7 +165,6 @@ li {
   flex-direction: column;
   gap: 1rem;
   background-color: #252525;
-  height: 180px;
   padding: 15px;
   cursor: pointer;
   position: relative;
@@ -182,6 +184,11 @@ li {
   cursor: pointer;
 }
 
+.textBox h3 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
 .textBox div {
   display: flex;
   align-items: center;
@@ -194,10 +201,16 @@ li {
   margin-right: 10px;
 }
 
+.textBox > p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
 .icon-box {
   cursor: pointer;
   background-color: #414141;
   padding: 10px;
+  margin-top: auto;
 }
 .box ul {
   display: flex;
@@ -213,10 +226,6 @@ li {
   gap: 10px;
   justify-content: center;
   font-size: 10px;
-}
-
-.list-border {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* style for footer section */

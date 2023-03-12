@@ -244,10 +244,11 @@ header {
   }
   #subgradientheading {
     padding-bottom: 0;
+    font-size: 14px;
   }
   #gradientheading {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 50px;
   }
   .containers > section {
     flex-direction: column-reverse;

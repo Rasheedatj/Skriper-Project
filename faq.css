@@ -105,6 +105,50 @@ li {
   margin-right: 20px;
 }
 
+/* ---------LOGIN-------- */
+.login {
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  background-color: #131313;
+  padding: 20px;
+  position: absolute;
+  right: 3rem;
+  top: 7rem;
+  width: 30rem;
+  color: #eee;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+  max-width: 350px;
+  width: 100%;
+  display: none;
+}
+
+.login.active {
+  display: block;
+}
+.login p {
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+.login h3 {
+  text-transform: capitalize;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.login form input {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  outline: none;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  padding: 10px;
+  font-size: 17px;
+  color: #eee;
+}
+
 /* --------MAIN BODY STYLES */
 
 /* search bar */
@@ -235,4 +279,129 @@ footer {
   margin-top: 1.5rem;
   display: flex;
   justify-content: end;
+}
+
+@media screen and (max-width: 760px) {
+  /* style for navigation bar */
+  .login {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navright a {
+    display: none;
+  }
+
+  .navright .one,
+  .navright .two,
+  .navright .three {
+    display: flex;
+  }
+
+  .navright .one p,
+  .navright .two p,
+  .navright .three p {
+    display: none;
+  }
+
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .left-two {
+    display: block;
+  }
+
+  /* style for footer section */
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .icons img {
+    width: 10%;
+  }
+
+  .box3 div {
+    justify-content: start;
+  }
+
+  #search-bar #searchtext {
+    padding: 10px;
+  }
+
+  #search-bar #searchtext {
+    width: 25%;
+  }
+  #search-bar input {
+    width: 65%;
+  }
+  #search-bar #searchicon {
+    width: 10%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 800px) {
+  .navright a {
+    display: none;
+  }
+
+  .navright .one,
+  .navright .two,
+  .navright .three {
+    display: flex;
+  }
+
+  #body {
+    width: 90%;
+  }
+
+  .navright .one p,
+  .navright .two p,
+  .navright .three p {
+    display: block;
+  }
+
+  #search-bar #searchtext {
+    width: 18%;
+  }
+  #search-bar input {
+    width: 73%;
+  }
+  #search-bar #searchicon {
+    width: 9%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  /* style for navigation bar */
+  .navright a {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .navright {
+    gap: 10px;
+  }
+
+  .navright .no-border {
+    border: none;
+    padding: 0;
+  }
+
+  #search-bar #searchtext {
+    width: 15%;
+  }
+  #search-bar input {
+    width: 78%;
+  }
+  #search-bar #searchicon {
+    width: 7%;
+  }
 }

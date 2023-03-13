@@ -352,6 +352,13 @@ footer {
   justify-content: end;
 }
 
+.box2 ul li {
+  transition: transform 300ms ease;
+}
+.box2 ul li:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 760px) {
   /* style for navigation bar */
   .login {

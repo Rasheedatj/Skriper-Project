@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background: #414141;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(19, 19, 19);
@@ -15,8 +25,7 @@ body {
 
 .main-body {
   width: 90%;
-  margin: auto;
-  margin-block: 5rem;
+  margin: 2rem auto;
 }
 
 /* -----HEADER---------- */
@@ -94,6 +103,85 @@ li {
 }
 .navright .navBox {
   margin-right: 20px;
+}
+
+/* --------MAIN BODY STYLES */
+
+/* search bar */
+#search-bar {
+  display: flex;
+  padding: 15px 20px;
+  background: rgba(37, 37, 37, 0.8);
+}
+
+#search-bar > div {
+  background-color: #414141;
+}
+
+#search-bar #searchtext {
+  padding: 15px 10px 15px 18px;
+  width: 10%;
+  font-weight: 500;
+}
+
+#search-bar input {
+  width: 86%;
+  color: #fff;
+  font-size: 17px;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#search-bar #searchicon {
+  width: 4%;
+  display: grid;
+  place-items: center;
+}
+
+/* faq */
+.faq {
+  width: 95%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 5rem;
+}
+
+.faq > div {
+  background-color: #414141;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.faq > div h3 {
+  font-weight: 200;
+}
+
+.faq > div.open h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.faq > div .answer {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 200ms ease;
+  padding-top: 10px;
+}
+
+.faq > div p {
+  line-height: 25px;
+  font-style: 17px;
+  font-weight: 300;
+}
+
+.faq > div.open .answer {
+  height: auto;
+  display: block;
 }
 
 /* -----FOOTER------- */

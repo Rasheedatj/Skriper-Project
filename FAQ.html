@@ -69,113 +69,125 @@
     </header>
 
     <main class="main-body">
-      <section id="faq">
-        <div id="topsearch">
-          <div id="searchtext">Search</div>
-          <div id="searchspace"><input placeholder="Search..." /></div>
-          <div id="searchicon">
-            <img src="IMAGES/zoom.svg" at="search icon" id="iconfaq" />
-          </div>
+      <!-- search bar -->
+      <section id="search-bar">
+        <div id="searchtext">
+          <p>Search</p>
+        </div>
+
+        <input placeholder="Search..." maxlength="500" />
+
+        <div id="searchicon">
+          <img src="IMAGES/search.svg" at="search icon" id="iconfaq" />
         </div>
       </section>
-      <section id="faqparagraph">
-        <div id="faq1">
-          <input type="radio" id="FAQ1" name="accordion_radio" />
-          <label for="FAQ1">Where can I change my password?</label>
-          <div id="accordion_content">
+
+      <section class="faq">
+        <!-- faq -->
+        <div>
+          <h3 class="question">Where can I change my password?</h3>
+          <p class="answer">
             Our platform uses a dynamic password system which changes each time
             it is used, this key is sent by email when requested, for this
             reason, there is no fixed password or option to change the password
             or recover it
-          </div>
+          </p>
         </div>
-        <div id="faq2">
-          <input type="radio" id="FAQ2" name="accordion_radio" />
-          <label for="FAQ2">How can I delete my account?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">How can I delete my account?</h3>
+          <p class="answer">
             On your profile page you can request the deletion of your account,
             this process can take up to 8 days to complete
-          </div>
+          </p>
         </div>
-        <div id="faq3">
-          <input type="radio" id="FAQ3" name="accordion_radio" />
-          <label for="FAQ3"
-            >I recieved an email with a temporary password to access, but I did
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">
+            I recieved an email with a temporary password to access, but I did
             not request it, what should I do?
-          </label>
-          <div id="accordion_content">
+          </h3>
+          <p class="answer">
             No need to worry, your account is safe. If you didn't request the
             access code, don't worry, you may simply omit the email and that
             would be it. This can happen because someone entered a wrong email
             or tried to access your account, but as long as you do not share the
             code that you received, your account is safe.
-          </div>
+          </p>
         </div>
-        <div id="faq4">
-          <input type="radio" id="FAQ4" name="accordion_radio" />
-          <label for="FAQ4"
-            >After deleting my account, can I get my codes back?</label
-          >
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">
+            After deleting my account, can I get my codes back?
+          </h3>
+          <p class="answer">
             No, if the deletion process has already been executed, you will no
             longer be able to recover your codes.
-          </div>
+          </p>
         </div>
-        <div id="faq5">
-          <input type="radio" id="FAQ5" name="accordion_radio" />
-          <label for="FAQ5"
-            >Can I cancel the request to delete my account?</label
-          >
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">
+            Can I cancel the request to delete my account?
+          </h3>
+          <p class="answer">
             Yes, as long as the process has not been executed. At any time you
             can access your profile and in the account deletion tab you can
             cancel the application process.
-          </div>
+          </p>
         </div>
-        <div id="faq6">
-          <input type="radio" id="FAQ6" name="accordion_radio" />
-          <label for="FAQ6">How can I contact a user?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">How can I contact a user?</h3>
+          <p class="answer">
             If the user has social networks added to their profile, you only
             need to click on one of them and you will be instantly redirected to
             their page from which you can establish direct contact with the
             user.
-          </div>
+          </p>
         </div>
-        <div id="faq7">
-          <input type="radio" id="FAQ7" name="accordion_radio" />
-          <label for="FAQ7">Can I downgrade if I delete my code?</label>
-          <div id="accordion_content">
+        <!-- faq -->
+        <div>
+          <h3 class="question">Can I downgrade if I delete my code?</h3>
+          <p class="answer">
             Yes, but with certain conditions, you will not lose your level if
             you are an active user, but if a period of 6 months of inactivity
             passes in your account you can lose your level, it will be
             recalculated according to your active codes on the platform.
-          </div>
+          </p>
         </div>
-        <div id="faq8">
-          <input type="radio" id="FAQ8" name="accordion_radio" />
-          <label for="FAQ8">Do the created codes have any limit?</label>
-          <div id="accordion_content">
+        <!-- faq -->
+        <div>
+          <h3 class="question">Do the created codes have any limit?</h3>
+
+          <p class="answer">
             Each code you save must be less than 500KB in size and snippets must
             be less than 150KB
-          </div>
+          </p>
         </div>
-        <div id="faq9">
-          <input type="radio" id="FAQ9" name="accordion_radio" />
-          <label for="FAQ9">How may codes can i have?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">How may codes can i have?</h3>
+          <p class="answer">
             The number of codes allowed depends on the level you have in your
             account, check the table of levels and their benefits in your
             profile page. Snippets have no limits and limitations are not taken
             into account.
-          </div>
+          </p>
         </div>
-        <div id="faq10">
-          <input type="radio" id="FAQ10" name="accordion_radio" />
-          <label for="FAQ10"
-            >What licenses do the published codes have in skriper.dev?</label
-          >
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">
+            What licenses do the published codes have in skriper.dev?
+          </h3>
+          <p class="answer">
             When you publish code to skriper.dev it is then licensed under the
             MIT license. If your code is private we do not give it any license
             and you can license it as you may please, we recommend that you
@@ -184,33 +196,37 @@
             “fork” your code, skriper.dev keeps as a reference the original code
             from where the fork was made as an attribution of the respective
             credits.
-          </div>
+          </p>
         </div>
-        <div id="faq11">
-          <input type="radio" id="FAQ11" name="accordion_radio" />
-          <label for="FAQ11">What are account levels?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">What are account levels?</h3>
+          <p class="answer">
             These are ranges that allow accounts to be identified. These ranges
             are obtained by fulfilling some parameters that are described in
             your profile page.
-          </div>
+          </p>
         </div>
-        <div id="faq12">
-          <input type="radio" id="FAQ12" name="accordion_radio" />
-          <label for="FAQ12">What do I do if my code is copied?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">What do I do if my code is copied?</h3>
+          <p class="answer">
             Copying a code is performing a "copy & paste" and not a fork, the
             fork maintains the respective relationship with the code from which
             it was copied, but if you consider that the code was copied, you can
             send us a review request to our email. If you want to disable the
             fork option in your code, just go to settings in the editor and
             disable the fork option.
-          </div>
+          </p>
         </div>
-        <div id="faq13">
-          <input type="radio" id="FAQ13" name="accordion_radio" />
-          <label for="FAQ13">How can I add a mockup phone in my preview?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+
+        <div>
+          <h3 class="question">How can I add a mockup phone in my preview?</h3>
+          <div class="answer">
             <p>
               In your CSS add the next decorator:
               <code>/* @skriper mockup:phone */</code>
@@ -226,12 +242,13 @@
             ></iframe>
           </div>
         </div>
-        <div id="faq14">
-          <input type="radio" id="FAQ14" name="accordion_radio" />
-          <label for="FAQ14"
-            >How to create a picture of my code and share it</label
-          >
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">
+            How to create a picture of my code and share it
+          </h3>
+          <div class="answer">
             <p>
               Only select your code and press CTRL + Enter and customize your
               picture. In the next video we will show how can execute your JS
@@ -248,10 +265,11 @@
             ></iframe>
           </div>
         </div>
-        <div id="faq15">
-          <input type="radio" id="FAQ15" name="accordion_radio" />
-          <label for="FAQ15">How to include external CDN library</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">How to include external CDN library</h3>
+          <div class="answer">
             <iframe
               width="540"
               height="296"
@@ -263,10 +281,11 @@
             ></iframe>
           </div>
         </div>
-        <div id="faq16">
-          <input type="radio" id="FAQ16" name="accordion_radio" />
-          <label for="FAQ16">How to create gradients?</label>
-          <div id="accordion_content">
+
+        <!-- faq -->
+        <div>
+          <h3 class="question">How to create gradients?</h3>
+          <div class="answer">
             <iframe
               width="540"
               height="296"
@@ -313,5 +332,6 @@
         </div>
       </div>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>

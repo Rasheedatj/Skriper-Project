@@ -290,6 +290,14 @@ footer {
 
 @media screen and (max-width: 760px) {
   /* style for navigation bar */
+  .main-body {
+    width: 95%;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
   .login {
     left: 50%;
     transform: translateX(-50%);

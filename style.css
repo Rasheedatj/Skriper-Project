@@ -217,10 +217,7 @@ header {
   margin-top: 30px;
   margin-bottom: 0;
 }
-#topimg img {
-  height: auto;
-  width: 16rem;
-}
+
 #gradientheading {
   text-align: center;
   font-size: 70px;
@@ -326,6 +323,7 @@ header {
   #gradientheading {
     font-size: 35px;
     line-height: 50px;
+    padding-top: 1.5rem;
   }
   .containers > section {
     flex-direction: column-reverse;

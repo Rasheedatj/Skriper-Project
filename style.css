@@ -240,8 +240,8 @@ header {
   text-align: center;
   color: white;
   padding-bottom: 10rem;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 500;
 }
 #codeplayground {
   height: auto;
@@ -253,6 +253,7 @@ header {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 3rem;
+  font-weight: 400;
 }
 
 .containers {
@@ -317,14 +318,15 @@ header {
     margin-top: 0;
   }
   #subgradientheading {
-    padding-bottom: 0;
-    font-size: 14px;
+    padding-bottom: 1rem;
+    font-size: 12px;
   }
   #gradientheading {
     font-size: 35px;
     line-height: 50px;
-    padding-top: 1.5rem;
+    padding-block: 1.5rem;
   }
+
   .containers > section {
     flex-direction: column-reverse;
     gap: 2rem;
